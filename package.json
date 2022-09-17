@@ -1,5 +1,5 @@
 {
-  "name": "@ntlong870/graphql.macro",
+  "name": "ntlong870-graphql.macro",
   "version": "1.4.3",
   "main": "lib/index.js",
   "module": "es/index.js",
