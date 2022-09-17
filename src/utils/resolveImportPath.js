@@ -2,7 +2,7 @@
 import path from 'path';
 import fs from 'fs';
 
-const CMD = fs.realpathSync?.(process.cwd());
+const CMD = fs.realpathSync ? fs.realpathSync(process.cwd()) : '';
 
 const jsconfigPath = path.resolve(CMD, 'jsconfig.json');
 let jsconfigInclude;
@@ -14,7 +14,10 @@ if (fs.existsSync(jsconfigPath)) {
 const resolveImportPath = ({
   filename,
   relativePath,
-}) => {
+}: {
+  filename: string,
+  relativePath: string,
+}): string => {
   if (relativePath.startsWith('.')) {
     return path.join(filename, '..', relativePath);
   }
