@@ -1,5 +1,10 @@
 ## Unreleased (2022-09-17)
 
+## <small>1.4.5 (2022-09-17)</small>
+
+- 1.4.4 ([b73e728](https://github.com/ntl870/graphql.macro/commit/b73e728))
+- 1.4.5 ([2d982af](https://github.com/ntl870/graphql.macro/commit/2d982af))
+
 ## <small>1.4.4 (2022-09-17)</small>
 
 - 1.4.3 ([1af2bef](https://github.com/ntl870/graphql.macro/commit/1af2bef))
