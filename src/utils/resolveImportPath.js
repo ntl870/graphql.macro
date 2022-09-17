@@ -6,7 +6,7 @@ const CMD = fs.realpathSync ? fs.realpathSync(process.cwd()) : '';
 
 const jsconfigPath = path.resolve(CMD, 'jsconfig.json');
 let jsconfigInclude;
-if (fs.existsSync(jsconfigPath)) {
+if (fs.existsSync && fs.existsSync(jsconfigPath)) {
   const jsconfig = JSON.parse(fs.readFileSync(jsconfigPath, 'utf8'));
   jsconfigInclude = jsconfig.include ? jsconfig.include[0] : null;
 }
