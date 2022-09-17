@@ -1,6 +1,6 @@
 {
   "name": "ntlong870-graphql.macro",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "index.d.ts",
